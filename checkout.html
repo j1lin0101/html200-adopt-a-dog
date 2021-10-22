@@ -29,7 +29,7 @@
                 </div>
 
 
-                <button>Checkout</button>
+                <a href="checkout.html"><button>Checkout</button></a>
             </section>
         </header>
 
@@ -65,6 +65,8 @@
                     <label>State
                         <select name="state">
                             <option value=""></option>
+                            <option value="wa">WA</option>
+                            <option value="ca">CA</option>
                         </select>
                     </label>
 
@@ -89,27 +91,34 @@
 
                 <section class="checkout-results">
                     <h3>Dogs Adopted</h3>
-                    <section class="checkout-dog">
-                        <img src="images/lucas-checkout.jpg" alt="Image of Lucas the Dog">
-                        <div class="cost-container">
-                            <h4>Lucas</h4>
-                            <p class="cost">Cost to adopt: </p>
-                            <p>$123.45</p>
-                        </div>
-                    </section>
 
-                    <section class="checkout-dog">
-                        <img src="images/duffy-checkout.jpg" alt="Image of Duffy the Dog">
-                        <div class="cost-container">
-                            <h4>Duffy</h4>
-                            <p class="cost">Cost to adopt: </p>
-                            <p>$123.45</p>
-                        </div>
+                    <section class="checkout-row">
+                        <section class="checkout-dog">
+                            <img src="images/lucas-checkout.jpg" alt="Image of Lucas the Dog">
+                            <div class="dog-info">
+                                <h4>Lucas</h4>
+                                <div class="cost-container">
+                                    <p class="cost">Cost to adopt: </p>
+                                    <p>$123.45</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="checkout-dog">
+                            <img src="images/duffy-checkout.jpg" alt="Image of Duffy the Dog">
+                            <div class="dog-info">
+                                <h4>Duffy</h4>
+                                <div class="cost-container">
+                                    <p class="cost">Cost to adopt: </p>
+                                    <p>$123.45</p>
+                                </div>
+                            </div>
+                        </section>
                     </section>
 
                 </section>
                 <h3>Total Adoption Cost</h3>
-                <p>$1234.56</p>
+                <p class="total-cost">$1234.56</p>
 
                 <input type="submit">
             </form>

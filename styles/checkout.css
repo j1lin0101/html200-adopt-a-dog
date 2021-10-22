@@ -185,8 +185,15 @@ button, input, select, textarea {
     border: 1px solid lightgrey;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
     font-size: 1.5rem;
+}
+
+fieldset label {
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: normal;
 }
 
 label, h3, legend {
@@ -272,7 +279,7 @@ fieldset label {
     margin: 2rem 0;
 }
 
-.checkout button, input[type=submit] {
+.checkout a, input[type=submit] {
     background-color: var(--green);
     color: white;
     font-family: sans-serif;
@@ -281,6 +288,8 @@ fieldset label {
     padding: .5rem;
     border: none;
     border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .checkout button {
@@ -293,4 +302,5 @@ fieldset label {
 
 input[type=submit] {
     width: 25%;
+    padding: 1rem;
 }

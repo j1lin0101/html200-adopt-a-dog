@@ -126,7 +126,7 @@ footer {
 }
 
 .footer-content p {
-    font-weight: light;
+    font-weight: lighter;
 }
 
 .footer-content ul li {
@@ -255,7 +255,7 @@ main p {
     border-radius: 2px;
 }
 
-.dog-info button, .checkout button {
+.dog-info button, .checkout a {
     background-color: var(--green);
     color: white;
     font-family: sans-serif;
@@ -264,16 +264,7 @@ main p {
     padding: .5rem;
     border: none;
     border-radius: 2px;
-}
-
-.checkout a {
     width: 90%;
-}
-
-.dog-info button {
-    width: 90%;
-}
-
-.checkout button {
-    width: 100%;
+    text-align: center;
+    text-decoration: none;
 }

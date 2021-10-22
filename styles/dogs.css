@@ -126,7 +126,7 @@ footer {
 }
 
 .footer-content p {
-    font-weight: light;
+    font-weight: lighter;
 }
 
 .footer-content ul li {
@@ -174,7 +174,7 @@ main h2 {
 .dog-grid {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -232,7 +232,7 @@ main h2 {
     border-radius: 2px;
 }
 
-.dog-info button, .checkout button {
+.dog-info button, .checkout a {
     background-color: var(--green);
     color: white;
     font-family: sans-serif;
@@ -241,16 +241,7 @@ main h2 {
     padding: .5rem;
     border: none;
     border-radius: 2px;
-}
-
-.checkout a {
     width: 90%;
-}
-
-.dog-info button {
-    width: 90%;
-}
-
-.checkout button {
-    width: 100%;
+    text-decoration: none;
+    text-align: center;
 }

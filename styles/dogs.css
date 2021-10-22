@@ -185,7 +185,7 @@ main h2 {
 .dog-info {
     max-width: 100%;
     padding: 1rem;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
 }
 
 .dog-info>* {

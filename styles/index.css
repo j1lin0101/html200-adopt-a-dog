@@ -201,6 +201,18 @@ main p {
     align-items: center;
 }
 
+@media screen and (max-width: 576px) {
+    .dog-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dog-container {
+        width: 40%;
+    }
+}
+
 .dog-container {
     width: 18%;
     margin: 2rem 1rem;

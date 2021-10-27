@@ -339,3 +339,9 @@ aside h2 {
     color: #5BB2CA;
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width: 576px) {
+    aside {
+        display: none;
+    }
+}

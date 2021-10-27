@@ -178,9 +178,30 @@ main h2 {
     align-items: center;
 }
 
-.dog-container {
-    width: 18%;
-    margin: 2rem 1rem;
+@media screen and (max-width: 576px) {
+    .dog-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .dog-container {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dog-container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dog-container {
+        width: 30%;
+        margin: 2rem 1rem;
+    }
 }
 
 .dog-info {

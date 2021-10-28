@@ -19,11 +19,15 @@
 
 header {
     grid-area: 1/1/2/span 12;
-    background: url('../images/header-image.jpg');
-    background-position: top right;
+    grid-area: 1/1/2/span 12;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, grey, black);
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+    background-position: left top;
     background-repeat: no-repeat;
     background-color: #080808;
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -36,6 +40,8 @@ header {
 
 .logo img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -151,7 +157,8 @@ footer {
 
 footer img {
     max-width: 100%;
-    /* width: 25%; */
+    width: 100%;
+    height: auto;
 }
 
 .footer-content>* {

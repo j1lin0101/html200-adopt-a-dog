@@ -10,16 +10,19 @@
 }
 
 .grid-container {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 0.25fr 0.075fr auto 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
 }
 
 header {
-    grid-area: 1/1/2/13;
-    background-color: var(--blue);
+    grid-area: 1/1/2/span 12;
+    background: url('../images/header-image.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #080808;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -29,7 +32,6 @@ header {
 
 .logo, .checkout {
     margin: 2rem 8rem;
-    width: 30%;
 }
 
 .logo img {
@@ -79,7 +81,7 @@ nav {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -105,7 +107,7 @@ nav li+li:before {
 }
 
 footer {
-    background-color: #3D3D3D;
+    background-color: var(--blue);
     grid-area: 4/1/span 1/span 12;
     display: flex;
     flex-flow: column wrap;
@@ -180,9 +182,31 @@ main h2 {
     align-items: center;
 }
 
-.dog-container {
-    width: 24%;
-    margin: 2rem 0;
+@media screen and (max-width: 576px) {
+    .dog-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .dog-container {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dog-container {
+        width: 40%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dog-container {
+        width: 20%;
+        margin: 2rem 1rem;
+    }
 }
 
 .dog-info {
@@ -220,7 +244,6 @@ main h2 {
 
 .dog-container img {
     max-width: 100%;
-    width: 100%;
 }
 
 .dogs button {
@@ -244,6 +267,7 @@ main h2 {
     padding: .5rem;
     border: none;
     border-radius: 2px;
+    width: 90%;
     text-decoration: none;
     text-align: center;
 }

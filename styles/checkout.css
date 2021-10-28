@@ -12,14 +12,17 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.25fr auto auto;
+    grid-template-rows: 0.25fr 0.075fr auto 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
 }
 
 header {
     grid-area: 1/1/2/span 12;
-    background-color: var(--blue);
+    background: url('../images/header-image.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #080808;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -28,7 +31,6 @@ header {
 }
 
 .logo, .checkout {
-    width: 30%;
     margin: 2rem 8rem;
 }
 
@@ -79,7 +81,7 @@ nav {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -105,7 +107,7 @@ nav li+li:before {
 }
 
 footer {
-    background-color: #3D3D3D;
+    background-color: var(--blue);
     grid-area: 4/1/span 1/span 12;
     display: flex;
     flex-flow: column wrap;
@@ -227,14 +229,15 @@ fieldset label {
 }
 
 .checkout-dog {
+    width: 20%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .checkout-dog img {
     max-width: 100%;
+    width: 30%;
 }
 
 .dog-info {
@@ -243,11 +246,6 @@ fieldset label {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.checkout-dog img {
-    max-width: 100%;
-    /* min-width: 50%; */
 }
 
 .dog-info h4 {
@@ -296,6 +294,14 @@ fieldset label {
     border-radius: 2px;
     text-decoration: none;
     text-align: center;
+}
+
+.checkout button {
+    width: 100%;
+}
+
+.checkout a {
+    width: 90%;
 }
 
 input[type=submit] {

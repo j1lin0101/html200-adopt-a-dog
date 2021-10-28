@@ -10,16 +10,19 @@
 }
 
 .grid-container {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: 0.25fr 0.075fr auto 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
 }
 
 header {
-    grid-area: 1/1/2/13;
-    background-color: var(--blue);
+    grid-area: 1/1/2/span 12;
+    background: url('../images/header-image.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #080808;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -29,7 +32,6 @@ header {
 
 .logo, .checkout {
     margin: 2rem 8rem;
-    width: 30%;
 }
 
 .logo img {
@@ -70,10 +72,6 @@ h1 {
     padding: 1rem 0;
 }
 
-/* .checkout a {
-    width: 100%;
-} */
-
 nav {
     width: 100%;
     background-color: var(--grey);
@@ -83,7 +81,8 @@ nav {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -104,12 +103,12 @@ nav ul li {
 
 nav li+li:before {
     content: "/";
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 footer {
-    background-color: #3D3D3D;
+    background-color: var(--blue);
     grid-area: 5/1/span 1/span 12;
     display: flex;
     flex-flow: column wrap;
@@ -161,34 +160,38 @@ footer img {
 }
 
 main {
-    grid-area: 3/3/4/11;
+    grid-area: 3/3/4/8;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
 }
 
-main article {
-    width: 60%;
+.main-description img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.main-description article {
+    max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
 }
 
-main h2 {
+h2 {
     font-family: serif;
     font-weight: bolder;
     color: var(--blue);
     font-size: 2rem;
+}
+
+.main-description h2 {
     margin: 1rem 0;
 }
 
-main img {
-    max-width: 100%;
-}
-
-main p {
+.main-description p {
     font-family: sans-serif;
     font-weight: 100;
     font-size: 1.3rem;
@@ -196,29 +199,49 @@ main p {
 }
 
 .dogs {
-    grid-area: 4/3/5/11;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     margin: 2rem 0 5rem 0;
 }
 
 .dog-grid {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.dog-container {
-    max-width: 100%;
-    width: 24%;
-    margin: 2rem 0;
+@media screen and (max-width: 576px) {
+    .dog-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .dog-container {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dog-container {
+        width: 45%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dog-container {
+        width: 30%;
+        margin: 1rem 0.5rem;
+    }
 }
 
 .dog-info {
+    max-width: 100%;
     padding: 1rem;
     box-shadow: 0 0 5px grey;
 }
@@ -227,7 +250,7 @@ main p {
     margin: 0.5rem;
 }
 
-.dog-info h3 {
+h3 {
     font-family: serif;
     color: var(--blue);
     font-size: 1.5rem;
@@ -251,8 +274,8 @@ main p {
 }
 
 .dog-container img {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
 }
 
 .dogs button {
@@ -276,6 +299,49 @@ main p {
     padding: .5rem;
     border: none;
     border-radius: 2px;
+    width: 90%;
     text-align: center;
     text-decoration: none;
+}
+
+aside {
+    grid-area: 3/9/4/11;
+    width: 100%;
+}
+
+aside h2 {
+    margin: 1.5rem 0;
+}
+
+.blog-item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 4rem 0;
+}
+
+.blog-item img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.blog-item p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 2rem;
+}
+
+.blog-item a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #5BB2CA;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 576px) {
+    aside {
+        display: none;
+    }
 }

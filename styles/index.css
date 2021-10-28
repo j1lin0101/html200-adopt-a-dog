@@ -10,15 +10,15 @@
 }
 
 .grid-container {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: .5fr 0.17fr 1fr 2fr .5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    grid-template-rows: auto auto auto auto auto;
 }
 
 header {
-    grid-area: 1/1/2/span 12;
+    grid-area: 1/1/2/13;
     background-color: var(--blue);
     width: 100%;
     display: flex;
@@ -29,6 +29,7 @@ header {
 
 .logo, .checkout {
     margin: 2rem 8rem;
+    width: 30%;
 }
 
 .logo img {
@@ -69,6 +70,10 @@ h1 {
     padding: 1rem 0;
 }
 
+/* .checkout a {
+    width: 100%;
+} */
+
 nav {
     width: 100%;
     background-color: var(--grey);
@@ -78,6 +83,7 @@ nav {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 nav ul {
@@ -157,7 +163,7 @@ footer img {
 main {
     grid-area: 3/3/4/11;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
@@ -178,6 +184,10 @@ main h2 {
     margin: 1rem 0;
 }
 
+main img {
+    max-width: 100%;
+}
+
 main p {
     font-family: sans-serif;
     font-weight: 100;
@@ -188,26 +198,27 @@ main p {
 .dogs {
     grid-area: 4/3/5/11;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin: 2rem 0 5rem 0;
 }
 
 .dog-grid {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .dog-container {
-    width: 18%;
-    margin: 2rem 1rem;
+    max-width: 100%;
+    width: 24%;
+    margin: 2rem 0;
 }
 
 .dog-info {
-    max-width: 100%;
     padding: 1rem;
     box-shadow: 0 0 5px grey;
 }
@@ -240,6 +251,7 @@ main p {
 }
 
 .dog-container img {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -264,7 +276,6 @@ main p {
     padding: .5rem;
     border: none;
     border-radius: 2px;
-    width: 90%;
     text-align: center;
     text-decoration: none;
 }

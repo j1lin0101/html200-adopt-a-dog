@@ -28,6 +28,7 @@ header {
 }
 
 .logo, .checkout {
+    width: 30%;
     margin: 2rem 8rem;
 }
 
@@ -78,6 +79,7 @@ nav {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 nav ul {
@@ -225,15 +227,14 @@ fieldset label {
 }
 
 .checkout-dog {
-    width: 20%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .checkout-dog img {
     max-width: 100%;
-    width: 30%;
 }
 
 .dog-info {
@@ -242,6 +243,11 @@ fieldset label {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.checkout-dog img {
+    max-width: 100%;
+    /* min-width: 50%; */
 }
 
 .dog-info h4 {
@@ -290,14 +296,6 @@ fieldset label {
     border-radius: 2px;
     text-decoration: none;
     text-align: center;
-}
-
-.checkout button {
-    width: 100%;
-}
-
-.checkout a {
-    width: 90%;
 }
 
 input[type=submit] {

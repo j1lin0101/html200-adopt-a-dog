@@ -15,4 +15,8 @@ $(function () {
         totalCost += 123.45;
         $('.checkout-icon p').text("$" + totalCost);
     });
+
+    $('.dog-container').click(function () {
+        $(this).find('h3').delay(300).css('color', 'red');
+    })
 });

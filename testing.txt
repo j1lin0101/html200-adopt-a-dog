@@ -25,3 +25,16 @@ Assumptions:
     - Most people searching to own a dog are working at a paid job 
     - Because of the huge diversity in ownership, no one browser will be the preferred
 
+User Persona
+- Name: John Smith
+- Age: 35
+- Occupation: Investment Banker
+- Activities: Hiking, Football, Spending time with wife and 2 children
+- Technology: 
+    - 1 year-old smartphone  
+    - 2 year-old laptop
+    - Constant access to the internet but mostly through his phone
+    - Lives in a big city
+- Other Info:
+    - Not very knowledgeable about dogs and dog breeds
+    - Looking to add a pet to his family for his kids

@@ -7,4 +7,5 @@ let totalPrice = 0;
 function totalCost(addedFees) {
     totalPrice = totalPrice + Number(addedFees);
     alert("Total Cost: " + totalPrice);
+    $('.checkout-icon p').text("$" + totalCost);
 }

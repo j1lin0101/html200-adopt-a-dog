@@ -179,7 +179,7 @@ main h2 {
 
 .blog-article {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
     margin: 5rem 0;
@@ -209,6 +209,27 @@ main h2 {
     justify-content: space-around;
     align-items: flex-start;
     margin: 0 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-area: 3/2/4/12;
+    }
+    .blog-article {
+        margin: 2rem 0;
+        width: 100%;
+    }
+    .blog-article article {
+        width: 100%;
+        margin: 0;
+    }
+    .blog-article h3 {
+        font-size: 1.2rem;
+    }
+    .blog-article p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
 }
 
 .checkout a {

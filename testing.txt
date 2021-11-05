@@ -1,0 +1,27 @@
+User Research
+
+    United States Pet Ownership Stats:
+    - 48,255,413 households 
+    - Average 1.6 dogs/household 
+    - 76,811,305 total owned dogs in U.S. 
+    - 94% Pets, 2% Service (e.g. sight dogs), 3% work (e.g. search and rescue dogs) 
+    - 71% of pet ownership are families (i.e. spouse + child)
+        - Strong correlation between family status and pet ownership
+        - 60% of pet owners are family households
+    - 62% of pet owners own their own houses 
+        - No super strong correlation between household income and pet ownership 
+        - 50% of pet owners has incomes less than $55k 
+        - However there is a strong correlation between home ownership and pet ownership
+        - 62% of pet owners own their house 
+    - No strong correlation between education and pet ownership 
+
+    Sources: 
+    - AVMA 2017-2018 U.S. Pet Ownership & Demographics Sourcebook
+
+
+Assumptions:
+    - Most people searching to own a dog live in a family household 
+    - Most people searching to own a dog have some form of internet access
+    - Most people searching to own a dog are working at a paid job 
+    - Because of the huge diversity in ownership, no one browser will be the preferred
+

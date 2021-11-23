@@ -1,0 +1,53 @@
+User Research
+    United States Pet Ownership Stats:
+    - 48,255,413 households 
+    - Average 1.6 dogs/household 
+    - 76,811,305 total owned dogs in U.S. 
+    - 94% Pets, 2% Service (e.g. sight dogs), 3% work (e.g. search and rescue dogs) 
+    - 71% of pet ownership are families (i.e. spouse + child)
+        - Strong correlation between family status and pet ownership
+        - 60% of pet owners are family households
+    - 62% of pet owners own their own houses 
+        - No super strong correlation between household income and pet ownership 
+        - 50% of pet owners has incomes less than $55k 
+        - However there is a strong correlation between home ownership and pet ownership
+        - 62% of pet owners own their house 
+    - No strong correlation between education and pet ownership 
+
+    Sources: 
+    - AVMA 2017-2018 U.S. Pet Ownership & Demographics Sourcebook
+
+    Assumptions
+    - Most people searching to own a dog live in a family household 
+    - Most people searching to own a dog have some form of internet access
+    - Most people searching to own a dog are working at a paid job 
+    - Because of the huge diversity in ownership, no one browser will be the preferred
+
+
+User Persona
+- Name: John Smith
+- Age: 35
+- Occupation: Investment Banker
+- Activities: Hiking, Football, Spending time with wife and 2 children
+- Technology: 
+    - 1 year-old smartphone  
+    - 2 year-old laptop
+    - Constant access to the internet but prefers to use his phone
+    - Lives in a big city
+- Other Info:
+    - Not very knowledgeable about dogs and dog breeds
+    - Looking to add a pet to his family for his kids
+
+
+Testing
+    Different Browsers
+    - Viewed the website on Google Chrome, Firefox, and Safari
+    - Ensured that the various sizings, animations, and effects worked consistently across each browser
+
+    Platforms
+    - Viewed the website on desktop, phone, and tablet screens using the Google Chrome device emulator
+    - Ensured that each layout responded smoothly to the dimension changes
+        - Saw that blog page did not properly resize on mobile
+        - Made appropriate changes to ensure better responsiveness
+    - Viewed the published version from GH pages on my personal mobile device to see how various interactions worked on mobile
+        - Since hover is not an action on mobile, I wanted to make sure that interactions with that still had intended effects working
